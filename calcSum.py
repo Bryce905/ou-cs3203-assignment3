@@ -4,8 +4,6 @@ def calcSum(list):
         sum = sum + list[i-1]
     return sum
 
-print(calcSum([1, 2, 3, 4, 5]))
-
 
 def calcProduct(list):
     product = 1
@@ -13,4 +11,11 @@ def calcProduct(list):
         product = product * list[i-1]
     return product
 
-print(calcProduct([1,2,3,4]))
+
+
+def main():
+    print("Please enter a list of numbers")
+    string = [int(i) for i in input().split()]
+    print("The sum is " + str(calcSum(string)))
+    print("The product is " + str(calcProduct(string)))
+    return 0
