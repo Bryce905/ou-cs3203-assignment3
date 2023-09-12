@@ -11,6 +11,12 @@ def calcProduct(list):
         product = product * list[i-1]
     return product
 
+def revList(list):
+    rlist = []
+    for i in list:
+        rlist.insert(0, list[i-1])
+    return rlist
+
 
 
 def main():
@@ -18,4 +24,5 @@ def main():
     string = [int(i) for i in input().split()]
     print("The sum is " + str(calcSum(string)))
     print("The product is " + str(calcProduct(string)))
+    print("The reverse is ")
     return 0
