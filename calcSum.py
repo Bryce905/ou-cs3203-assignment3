@@ -18,11 +18,11 @@ def revList(list):
     return rlist
 
 
-
 def main():
     print("Please enter a list of numbers")
     string = [int(i) for i in input().split()]
     print("The sum is " + str(calcSum(string)))
     print("The product is " + str(calcProduct(string)))
     print("The reverse is ")
+    print(revList(string))
     return 0
